@@ -12,6 +12,7 @@ const ButtonDailog = (
     { buttonName, style, data, isEdit }: { buttonName: string, style: string, data?: User, isEdit: boolean }
 ) => {
     const [dialogOpen, setDialogOpen] = useState<boolean>(false)
+    console.log(isEdit)
 
     return (
         <>

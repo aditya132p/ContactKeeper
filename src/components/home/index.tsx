@@ -28,7 +28,7 @@ const Home = () => {
               <Text as='p'>Lorem ipsum dolor sit amet consectetur.</Text>
             </Box>
             <Flex as='div' justify="end" align={"center"} >
-              <ButtonDailog isEdit buttonName=" Add Contact" style='inline-flex h-[35px] gap-2 items-center justify-center rounded bg-purple-700 py-[20px] text-white  px-[15px] font-medium leading-none focus:outline-none' />
+              <ButtonDailog isEdit={false} buttonName=" Add Contact" style='inline-flex h-[35px] gap-2 items-center justify-center rounded bg-purple-700 py-[20px] text-white  px-[15px] font-medium leading-none focus:outline-none' />
             </Flex>
           </Flex>
           {!data ? (
