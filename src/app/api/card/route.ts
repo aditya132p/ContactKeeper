@@ -1,5 +1,5 @@
 import prisma from "@/utils/prisma";
-import { Card } from "@prisma/client";
+import { Card,  } from "@prisma/client";
 import { NextResponse } from "next/server";
 
 export async function GET(request: Request) {
@@ -38,9 +38,10 @@ export async function POST(request: Request) {
     const body: Card = await request.json();
 
     const card = await prisma.card.create({ data: body });
-
+    console.log(card)
     return NextResponse.json(card);
   } catch (error) {
+    console.log(error)
     return NextResponse.json(
       { error: "Internal Server Error!" },
       {
